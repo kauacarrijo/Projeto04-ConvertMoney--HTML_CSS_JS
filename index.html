@@ -16,8 +16,12 @@
     <main>
         <label>
             Converter <b>de</b>
-            <select>
-                <option>R$ Real brasileiro</option>
+            <select id="optionOne">
+                <option value="real">R$ Real brasileiro</option>
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
             </select>
         </label>
         <label>
@@ -27,6 +31,7 @@
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
                 <option value="bitcoin">₿ Bitcoin</option>
+                <option value="real">R$ Real brasileiro</option>
             </select>
         </label>
         <label>
@@ -36,13 +41,13 @@
         <button>Converter</button>
         <section>
             <div>
-                <img class="logoConvert" id="logo1" src="./assets/brasil.png" alt="logo-brasil">
-                <p>Real</p>
+                <img class="logoConvert" id="logo1" src="./assets/brasil.png" alt="logo">
+                <p id="pOne">Real</p>
                 <h3 id="valorOne">R$ 0,00</h3>
             </div>
             <img id="logoTransition" src="./assets/Vector.png" alt="logo-transition">
             <div>
-                <img class="logoConvert" id="logo2" src="./assets/eua.png" alt="logo-eua">
+                <img class="logoConvert" id="logo2" src="./assets/eua.png" alt="logo">
                 <p id="pTwo">Dólar Americano</p>
                 <h3 id="valorTwo">$0.00</h3>
             </div>
