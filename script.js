@@ -8,7 +8,7 @@ const logoTwo = document.querySelector("#logo2")
 const pOne = document.querySelector("#pOne")
 const pTwo = document.querySelector("#pTwo")
 let valor = document.querySelector("#valor")
-let taxas = {
+const TAXAS = {
     "dolar": 1,
     "euro": 0.92,
     "libra": 0.77,
@@ -104,8 +104,8 @@ const convertValues = () => {
         }
     }
 
-    let taxaDe = taxas[optionOne.value]
-    let taxaPara = taxas[optionTwo.value]
+    let taxaDe = TAXAS[optionOne.value]
+    let taxaPara = TAXAS[optionTwo.value]
     let valorConvert = (valorOriginal / taxaDe) * taxaPara
 
     if (optionTwo.value == "dolar") {
